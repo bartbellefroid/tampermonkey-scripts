@@ -6,6 +6,8 @@
 // @author       Bart Bellefroid, ChatGPT
 // @match        *://*.bol.com/*/*/s/*
 // @grant        GM_xmlhttpRequest
+// @downloadURL  https://gitlab.bol.io/bbellefroid/nemo-webshop-plugin/-/raw/master/nemo-webshop-plugin.js
+// @updateURL    https://gitlab.bol.io/bbellefroid/nemo-webshop-plugin/-/raw/master/nemo-webshop-plugin.js
 
 // ==/UserScript==
 
