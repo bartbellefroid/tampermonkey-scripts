@@ -6,8 +6,8 @@
 // @author       Bart Bellefroid, ChatGPT
 // @match        *://*.bol.com/*/*/s/*
 // @grant        GM_xmlhttpRequest
-// @downloadURL  https://gitlab.bol.io/bbellefroid/nemo-webshop-plugin/-/raw/master/nemo-webshop-plugin.js
-// @updateURL    https://gitlab.bol.io/bbellefroid/nemo-webshop-plugin/-/raw/master/nemo-webshop-plugin.js
+// @downloadURL  https://github.com/bartbellefroid/tampermonkey-scripts/blob/a44a694e92128b30c8920f668c19edf162b1f47e/bol%20-%20experiment%20-%20search%20input%20suggestion%20with%20GPT.js
+// @updateURL    https://github.com/bartbellefroid/tampermonkey-scripts/blob/a44a694e92128b30c8920f668c19edf162b1f47e/bol%20-%20experiment%20-%20search%20input%20suggestion%20with%20GPT.js
 
 // ==/UserScript==
 
