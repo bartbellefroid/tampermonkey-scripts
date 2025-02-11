@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Bol.com - experiment: LLM search input suggestion script with GPT-4
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  This experiment shows an alternative way for the product you are searching for...
 // @author       Bart Bellefroid, ChatGPT
 // @match        *://*.bol.com/*/*/s/*
