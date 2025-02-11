@@ -20,7 +20,7 @@
         var zoekterm = haalZoektermOp();
         if (zoekterm) {
             console.log("Gevonden zoekterm: " + zoekterm);
-            var openAI_API_Key = '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'; //Please use your own key :-P
+            var openAI_API_Key = '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'; //Please use your own key :-P
 
 
             GM_xmlhttpRequest({
