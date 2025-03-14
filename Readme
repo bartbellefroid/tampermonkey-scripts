@@ -1,0 +1,70 @@
+# LLM experiments, to use the power of LLM for search
+
+
+
+## Getting started
+
+In order to test the experiments yourself please download the latest version of Tampermonkey: https://www.tampermonkey.net/
+When you have installed the browserplugin, you may copy/past the JS scripts in this repository or use the import functionality in Tampermonkey to receive updates as well.
+
+
+## Name
+LLM-experiments: use the power of LLM for search enhancement
+
+
+
+## Description
+The goal of this project is to learn and test serveral ways of using LLM models out there, to gain for the current bol website.
+
+Currenlty we are testing with:
+- OpenAI, gpt-4 /completions
+- Cohere, command-r-plus /chat
+
+
+## Visuals
+This video will explain it: 
+https://bolcom-my.sharepoint.com/:v:/r/personal/bbellefroid_bol_com/Documents/Opname-20240405_163319.webm?csf=1&web=1&e=8JlOBd&nav=eyJwbGF5YmFja09wdGlvbnMiOnt9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbE1vZGUiOiJtaXMiLCJyZWZlcnJhbFZpZXciOiJwb3N0cm9sbC1jb3B5bGluayIsInJlZmVycmFsUGxheWJhY2tTZXNzaW9uSWQiOiJlYThhZTkyMC0xY2Q4LTQxMWItOTU2OC01ZTRhM2JhMzk5YjcifX0%3D 
+
+This second video shows the use with Portuguese search terms:
+https://bolcom-my.sharepoint.com/:v:/g/personal/bbellefroid_bol_com/Ed-rnZGK9PxHjSYlcZDx10QBmYHabJeTZXPJRluEiJ00rg?e=rraMNJ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D 
+
+
+
+## Background
+In finding a way to show the power of LLM's we had a brainstorm with our HMF department. After a short conclusion at the end of the session we are looking into the "low hanging fruit" where end customers can benefit from. In order to get from a creative idea to the next stage we need to figure out several questions.
+
+
+
+## Prompts
+1. "Geef een alternatieve suggestie om producten te vinden voor de volgende woorden, die te gebruiken bij een Nederlandse e-commerce website: + zoekterm +
+1. "Geef me één zoekterm als alternatieve suggestie om producten mee te vinden op een Nederlandse e-commerce website voor de volgende zoekterm: " + zoekterm + " (antwoord alleen met de zoekterm)
+
+## Test cases
+In order to learn if there is value in a suggetion like this one we would love to test with internatioals
+
+For example: the top searches that Brazilians do and got some results:
+- fone de ouvido sem fio (wireless headphones / earbuds)
+- geladeira (fridge)
+- sandalia feminina (women sandaals)
+- árvore de natal (christmas tree)
+- material escolar (school supplies)
+- mochila infantil (kid's backpack)
+- ar-condicionado (airconditioning)
+
+## Usage
+Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+
+## Support
+I am on the company Slack, please reach out if you have any questions
+
+## Roadmap
+If you have ideas for releases in the future, it is a good idea to list them in the README.
+
+## Contributing
+Let me know if you want to contribute, I am already proud as a non-developer to create this working peace of code :-)
+
+## License
+N/a
+
+## Project status
+Ideation stage
