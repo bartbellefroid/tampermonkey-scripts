@@ -6,8 +6,8 @@
 // @author       Bart Bellefroid, ChatGPT
 // @match        *://*.bol.com/*/*/s/*
 // @grant        GM_xmlhttpRequest
-// @downloadURL  https://raw.githubusercontent.com/bartbellefroid/tampermonkey-scripts/main/bol%20-%20experiment%20-%20search%20input%20suggestion%20with%20GPT.js
-// @updateURL    https://raw.githubusercontent.com/bartbellefroid/tampermonkey-scripts/main/bol%20-%20experiment%20-%20search%20input%20suggestion%20with%20GPT.js
+// @downloadURL  https://github.com/bartbellefroid/tampermonkey-scripts/raw/bcb15dd371061fc17977b2ecf9109751b07c88f9/bol%20-%20experiment%20-%20search%20input%20suggestion%20with%20GPT.js
+// @updateURL    https://github.com/bartbellefroid/tampermonkey-scripts/raw/bcb15dd371061fc17977b2ecf9109751b07c88f9/bol%20-%20experiment%20-%20search%20input%20suggestion%20with%20GPT.js
 
 
 // ==/UserScript==
