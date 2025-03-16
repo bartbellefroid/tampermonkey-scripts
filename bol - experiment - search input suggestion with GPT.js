@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Bol.com - experiment: LLM search input suggestion script with GPT-4
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  This experiment shows alternative search suggestions for products using GPT
 // @author       Bart Bellefroid, ChatGPT
 // @match        *://*.bol.com/*/*/s/*
@@ -31,6 +31,7 @@
             font-size: 14px;
             line-height: 1.4;
             max-width: 800px;
+            position: relative;
         }
         .ai-suggestion-title {
             font-weight: bold;
@@ -56,6 +57,41 @@
             border-top-color: #0000A4;
             animation: ai-spin 1s linear infinite;
             margin-right: 10px;
+        }
+        .ai-info-icon {
+            position: absolute;
+            top: 12px;
+            right: 15px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #0000A4;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            user-select: none;
+        }
+        .ai-info-tooltip {
+            position: absolute;
+            top: -10px;
+            right: 30px;
+            width: 250px;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            font-size: 12px;
+            color: #333;
+            z-index: 1000;
+            display: none;
+        }
+        .ai-info-tooltip.visible {
+            display: block;
         }
         @keyframes ai-spin {
             to { transform: rotate(360deg); }
@@ -105,6 +141,30 @@
         content.className = 'ai-suggestion-content';
         content.textContent = 'Suggestie laden...';
         container.appendChild(content);
+        
+        // Info icoon toevoegen
+        const infoIcon = document.createElement('div');
+        infoIcon.className = 'ai-info-icon';
+        infoIcon.textContent = 'i';
+        container.appendChild(infoIcon);
+        
+        // Tooltip voor info icoon
+        const tooltip = document.createElement('div');
+        tooltip.className = 'ai-info-tooltip';
+        tooltip.innerHTML = 'Dit is een Tampermonkey browser extensie die AI-gebaseerde zoeksuggesties toont voor Bol.com. ' +
+                           'De suggesties worden gegenereerd door het GPT-4o-mini model van OpenAI.';
+        container.appendChild(tooltip);
+        
+        // Event listener voor het tonen/verbergen van de tooltip
+        infoIcon.addEventListener('click', function(e) {
+            e.stopPropagation();
+            tooltip.classList.toggle('visible');
+        });
+        
+        // Verberg tooltip bij klikken buiten het element
+        document.addEventListener('click', function() {
+            tooltip.classList.remove('visible');
+        });
         
         h1Element.insertAdjacentElement('afterend', container);
         return container;
