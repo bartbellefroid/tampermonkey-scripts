@@ -1,15 +1,15 @@
 // ==UserScript==
-// @name         Bol.com - experiment: LLM search input suggestion script with GPT-4
+// @name         Bol.com - Alternative Search Suggestions with GPT-4
 // @namespace    http://tampermonkey.net/
 // @version      1.3
-// @description  This experiment shows alternative search suggestions for products using GPT
+// @description  Shows alternative search suggestions for products on Bol.com using GPT
 // @author       Bart Bellefroid, ChatGPT
 // @match        *://*.bol.com/*/*/s/*
 // @grant        GM_xmlhttpRequest
 // @grant        GM_setValue
 // @grant        GM_getValue
-// @downloadURL  https://github.com/bartbellefroid/tampermonkey-scripts/raw/main/bol%20-%20experiment%20-%20search%20input%20suggestion%20with%20GPT.js
-// @updateURL    https://github.com/bartbellefroid/tampermonkey-scripts/raw/main/bol%20-%20experiment%20-%20search%20input%20suggestion%20with%20GPT.js
+// @downloadURL  https://github.com/bartbellefroid/tampermonkey-scripts/raw/main/bol%20-%20alternative%20search%20suggestion%20with%20GPT.js
+// @updateURL    https://github.com/bartbellefroid/tampermonkey-scripts/raw/main/bol%20-%20alternative%20search%20suggestion%20with%20GPT.js
 
 
 // ==/UserScript==
